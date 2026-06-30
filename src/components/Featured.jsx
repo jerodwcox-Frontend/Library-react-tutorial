@@ -9,7 +9,15 @@ const Featured = () => {
           <h2 className="section__title">
             Featured <span className="purple">Books</span>
           </h2>
-          <BestBooks />
+          <div className="books">
+            <div className="book">
+              <a href="">
+                <figure className="book__img--wrapper">
+                  <img src="" alt="" className="book__img" />
+                </figure>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
