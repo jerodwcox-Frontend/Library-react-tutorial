@@ -252,11 +252,11 @@ header {
 .header__img--wrapper {
   padding: 20px;
   z-index: 50;
-  max-height: 280px;
+  max-height: 160px;
 }
 
 .header__img--wrapper img {
-  max-height: 280px;
+  max-height: 160px;
   width: auto;
 }
 
