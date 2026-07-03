@@ -251,7 +251,7 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-  z-index: 50;
+  z-index: 600;
   max-height: 160px;
 }
 
