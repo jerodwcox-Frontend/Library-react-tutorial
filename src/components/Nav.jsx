@@ -18,27 +18,9 @@ const Nav = ({ numberOfItems }) => {
           <img src={LibraryLogo} alt="" className="logo" />
         </a>
         <ul className="nav__links">
-          <li className="nav__list">
-            <a href="/" className="nav__link">
-              Home
-            </a>
-          </li>
-          <li className="nav__list">
-            <a href="/books" className="nav__link nav__link--primary">
-              Books
-            </a>
-          </li>
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
-          <li className="nav__icon">
-            <a href="/cart" className="nav__link">
-              <FontAwesomeIcon icon="shopping-cart" />
-            </a>
-            {numberOfItems > 0 && (
-              <span className="cart__length">{numberOfItems}</span>
-            )}
-          </li>
         </ul>
         <div className="menu__backdrop">
           <button className="btn__menu btn__menu--close" onClick={closeMenu}>
@@ -57,7 +39,9 @@ const Nav = ({ numberOfItems }) => {
             </li>
             <li className="menu__list">
               <a href="/cart" className="menu__link" onClick={closeMenu}>
-                Cart
+                Cart {numberOfItems > 0 && (
+                  <span className="cart__length">{numberOfItems}</span>
+                )}
               </a>
             </li>
           </ul>
