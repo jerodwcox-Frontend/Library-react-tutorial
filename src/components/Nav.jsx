@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LibraryLogo from "../assets/Library.svg";
 
@@ -14,9 +15,9 @@ const Nav = ({ numberOfItems }) => {
   return (
     <nav>
       <div className="nav__container">
-        <a href="/">
+        <Link to="/">
           <img src={LibraryLogo} alt="" className="logo" />
-        </a>
+        </Link>
         <ul className="nav__links">
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
@@ -28,21 +29,21 @@ const Nav = ({ numberOfItems }) => {
           </button>
           <ul className="menu__links">
             <li className="menu__list">
-              <a href="/" className="menu__link" onClick={closeMenu}>
+              <Link to="/" className="menu__link" onClick={closeMenu}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="menu__list">
-              <a href="/books" className="menu__link" onClick={closeMenu}>
+              <Link to="/books" className="menu__link" onClick={closeMenu}>
                 Books
-              </a>
+              </Link>
             </li>
             <li className="menu__list">
-              <a href="/cart" className="menu__link" onClick={closeMenu}>
+              <Link to="/cart" className="menu__link" onClick={closeMenu}>
                 Cart {numberOfItems > 0 && (
                   <span className="cart__length">{numberOfItems}</span>
                 )}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
