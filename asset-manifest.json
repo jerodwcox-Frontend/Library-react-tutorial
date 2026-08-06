@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Library-react-tutorial/static/css/main.0ea8ba49.css",
+    "main.js": "/Library-react-tutorial/static/js/main.0b085cc6.js",
+    "static/js/453.6465a6e1.chunk.js": "/Library-react-tutorial/static/js/453.6465a6e1.chunk.js",
+    "static/media/atomic habits.jpg": "/Library-react-tutorial/static/media/atomic habits.214deebbc9b543ae6909.jpg",
+    "static/media/book-2.jpeg": "/Library-react-tutorial/static/media/book-2.98501e6c040cd9fb1756.jpeg",
+    "static/media/book-4.jpeg": "/Library-react-tutorial/static/media/book-4.c5322a3f6b5babeb5267.jpeg",
+    "static/media/book-3.jpeg": "/Library-react-tutorial/static/media/book-3.1c168e1ecb0b290b6773.jpeg",
+    "static/media/book-7.jpg": "/Library-react-tutorial/static/media/book-7.e63524b4f62f57e04264.jpg",
+    "static/media/david goggins.jpeg": "/Library-react-tutorial/static/media/david goggins.ba388cf1f621911ec91e.jpeg",
+    "static/media/crack the coding interview.png": "/Library-react-tutorial/static/media/crack the coding interview.4e7538d03e5cf308d930.png",
+    "static/media/book-1.jpeg": "/Library-react-tutorial/static/media/book-1.b2a03220f4d479e044d4.jpeg",
+    "static/media/book-6.jpeg": "/Library-react-tutorial/static/media/book-6.aac39a1c2f9c46d19c95.jpeg",
+    "static/media/book-5.jpeg": "/Library-react-tutorial/static/media/book-5.81c69d01c5bb577c41e3.jpeg",
+    "static/media/deep work.jpeg": "/Library-react-tutorial/static/media/deep work.664e344e2542d1144aa0.jpeg",
+    "static/media/book-8.jpeg": "/Library-react-tutorial/static/media/book-8.24edec7fb6b2d832f486.jpeg",
+    "static/media/Undraw_Books.svg": "/Library-react-tutorial/static/media/Undraw_Books.64f45ed25262241aba12eff6dcb25d88.svg",
+    "static/media/Library.svg": "/Library-react-tutorial/static/media/Library.70d0a6a90c21c295982ded03f9ea8615.svg",
+    "static/media/empty_cart.svg": "/Library-react-tutorial/static/media/empty_cart.378125a834ec5473a1cffd7c59e06527.svg",
+    "index.html": "/Library-react-tutorial/index.html",
+    "static/media/wave.svg": "/Library-react-tutorial/static/media/wave.42edd5970e3619090a0f.svg",
+    "main.0ea8ba49.css.map": "/Library-react-tutorial/static/css/main.0ea8ba49.css.map",
+    "main.0b085cc6.js.map": "/Library-react-tutorial/static/js/main.0b085cc6.js.map",
+    "453.6465a6e1.chunk.js.map": "/Library-react-tutorial/static/js/453.6465a6e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ea8ba49.css",
+    "static/js/main.0b085cc6.js"
+  ]
+}
