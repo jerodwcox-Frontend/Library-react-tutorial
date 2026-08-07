@@ -19,6 +19,14 @@ const Nav = ({ numberOfItems }) => {
           <img src={LibraryLogo} alt="" className="logo" />
         </Link>
         <ul className="nav__links">
+          <li className="nav__list">
+            <Link to="/cart" className="nav__icon" aria-label="Cart">
+              <FontAwesomeIcon icon="shopping-cart" />
+              {numberOfItems > 0 && (
+                <span className="cart__length">{numberOfItems}</span>
+              )}
+            </Link>
+          </li>
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
