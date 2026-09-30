@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Price from "./ui/Price";
 import Ratings from "./ui/Ratings";
 
-const Book = ({ book }) => {
+const Book = ({ book, className = "" }) => {
   return (
-    <div className="book">
+    <div className={`book ${className}`.trim()}>
       <Link to={`/books/${book.id}`}>
         <figure className="book__img--wrapper">
           <img className="book__img" src={book.url} alt={book.title} />

@@ -3,10 +3,17 @@ import Book from "../components/Book";
 
 const Books = ({ books: initalBooks }) => {
   const [books, setBooks] = useState();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setBooks(initalBooks);
   }, [initalBooks]);
+
+  // Show the skeleton "loading stage" for 1 second
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   function filterBooks(filter) {
     switch (filter) {
@@ -61,9 +68,19 @@ const Books = ({ books: initalBooks }) => {
                 </select>
               </div>
               <div className="books">
-                {books && books.map((book) => {
-                  return <Book book={book} key={book.id} />;
-                })}
+                {loading
+                  ? new Array(8).fill(0).map((_, index) => (
+                      <div className="book book--skeleton" key={index}>
+                        <div className="book__img--skeleton"></div>
+                        <div className="skeleton book__title--skeleton"></div>
+                        <div className="skeleton book__rating--skeleton"></div>
+                        <div className="skeleton book__price--skeleton"></div>
+                      </div>
+                    ))
+                  : books &&
+                    books.map((book) => (
+                      <Book book={book} key={book.id} className="book--loaded" />
+                    ))}
               </div>
             </div>
           </div>
