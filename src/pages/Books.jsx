@@ -11,11 +11,11 @@ const Books = ({ books: initalBooks }) => {
 
   const loadingTimer = useRef(null);
 
-  // Show the skeleton "loading stage" for 2 seconds
+  // Show the skeleton "loading stage" for 3 seconds
   function showSkeleton() {
     setLoading(true);
     clearTimeout(loadingTimer.current);
-    loadingTimer.current = setTimeout(() => setLoading(false), 2000);
+    loadingTimer.current = setTimeout(() => setLoading(false), 3000);
   }
 
   // On first page load
