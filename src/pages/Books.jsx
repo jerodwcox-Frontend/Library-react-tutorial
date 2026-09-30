@@ -9,9 +9,9 @@ const Books = ({ books: initalBooks }) => {
     setBooks(initalBooks);
   }, [initalBooks]);
 
-  // Show the skeleton "loading stage" for 1 second
+  // Show the skeleton "loading stage" for 5 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
+    const timer = setTimeout(() => setLoading(false), 5000);
     return () => clearTimeout(timer);
   }, []);
 
