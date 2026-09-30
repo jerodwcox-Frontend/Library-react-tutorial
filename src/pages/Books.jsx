@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Book from "../components/Book";
 
 const Books = ({ books: initalBooks }) => {
@@ -9,13 +9,24 @@ const Books = ({ books: initalBooks }) => {
     setBooks(initalBooks);
   }, [initalBooks]);
 
-  // Show the skeleton "loading stage" for 5 seconds
+  const loadingTimer = useRef(null);
+
+  // Show the skeleton "loading stage" for 2 seconds
+  function showSkeleton() {
+    setLoading(true);
+    clearTimeout(loadingTimer.current);
+    loadingTimer.current = setTimeout(() => setLoading(false), 2000);
+  }
+
+  // On first page load
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5000);
-    return () => clearTimeout(timer);
+    showSkeleton();
+    return () => clearTimeout(loadingTimer.current);
   }, []);
 
   function filterBooks(filter) {
+    // Every time the books are re-sorted (price or rating)
+    showSkeleton();
     switch (filter) {
       case "LOW_TO_HIGH":
         return setBooks(
